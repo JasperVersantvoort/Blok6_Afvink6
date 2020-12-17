@@ -12,9 +12,9 @@ public class Short_superstring {
                 ">Rosalind_59\n" +
                 "GCCGGAATAC";
 
-        String[] comby = new String[10];
-        ArrayList<String> head = new ArrayList<String>();
-        ArrayList<String> seq = new ArrayList<String>();
+        String[] comby;
+        ArrayList<String> head = new ArrayList<>();
+        ArrayList<String> seq = new ArrayList<>();
 
         comby = fasta_input.split("\n");
         for (String s : comby) {
@@ -27,7 +27,7 @@ public class Short_superstring {
         StringBuilder overlap = new StringBuilder();
 
         // bepaal start sequentie
-        ArrayList<Integer> cijfer_overlap = new ArrayList<Integer>();
+        ArrayList<Integer> cijfer_overlap = new ArrayList<>();
         for (String x : seq) {
             int j = 0;
             for (String y : seq) {
